@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Hotel Booking</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+	
+	
+</head>
+
+<body>
+		<div id="booking" class="section">
+			<div class="section-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7 col-md-push-5">							
+							<div class="booking-cta">
+								
+								<div class="scroolable-table">					
+								    
+							      </div>
+							</div>
+						</div>
+						<div class="col-md-4 col-md-pull-7">
+							<div class="booking-form">
+								        
+										
+							<div class="numberofRooms-container">
+								<div class="row">
+									<div class="col-sm-6 no-of-room-div ">
+										<div class="form-group">
+											<span class="form-label">Number of Rooms </span>
+											<input class="form-control no-of-room" type="number" placeholder="Between[1-1000]" autofocus>
+										</div>
+									</div>
+									<div class="col-sm-6 create-hotel-div">
+										<div class="form-group">
+											<span class="form-label"></span>
+											<button class="form-control-button create-hotel">Create Hotel</button>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+							<div class="alert alert-danger alert-hotel-room">
+							<strong>Error!</strong> Enter valid number of rooms between [1-1000]
+							</div>
+
+							
+			
+										
+							<div class="booking-container">
+							
+								<div class="row day-style-input">
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label start-date-label">Start Day</span>
+											<input class="form-control start-date input-fields" type="number" placeholder="Between[0-364]">
+										</div>
+									</div>
+									<div class="col-sm-6">
+										<div class="form-group">
+											<span class="form-label end-date-label">End Day</span>
+											<input class="form-control end-date input-fields" type="number" placeholder="Between[0-364]">
+										</div>
+									</div>
+								</div>
+								<div class="alert alert-danger alert-date-input">
+								<strong>Error!</strong> <span class="date-error" ></span>
+								</div>
+								
+
+								<div class="row array-style-input">
+								
+									<div class="col-sm-12">
+										<div class="form-group">
+											<span class="form-label array-dates-label">Enter Booking Dates (space separated)</span>
+											<input class="form-control array-dates input-fields" type="text" placeholder="Between[0-364]" required>
+											example: 1 2 4 5 means (1,2) (4,5)
+										</div>
+									</div>
+								
+								
+								</div>								
+
+								<div class="alert alert-danger alert-array-input">
+										<strong>Error!</strong> <span class="array-error" ></span>
+								</div>
+
+								<div class="alert notify-container">
+										<strong>Status!</strong> <span class="notification" ></span>
+								</div>
+
+								<div class="row">
+										<div class="col-sm-12">
+												<div class="form-group">												
+													<input class="toggle-checkbox input-fields" type="checkbox" value="arrayStyle"> <strong>Array Style Input for multiple days</strong>
+												</div>
+										</div>	
+								 </div>
+								
+
+								
+								<div class="form-btn">
+										<button class="submit-btn">Book the room</button>
+									</div>
+								<div class="form-btn">
+									<button class="btn btn-danger reset-booking">Start Over | Clear All Bookings</button>
+								</div>
+							
+							</div>
+							</div>
+									
+									
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+	<script src="./js/script.js"></script>
+</html>
